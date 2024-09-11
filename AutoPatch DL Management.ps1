@@ -5,10 +5,10 @@ Connect-MgGraph
 Connect-ExchangeOnline
 
 #Define Device Group from Entra
-$devicegroup = "Labs AutoPilot Devices"
+$devicegroup = "<DEVICE GROUP NAME>"
 
 #Define DL Group UPN
-$dlupn = "TestDL1@MyLiveOakLabs.onmicrosoft.com"
+$dlupn = "<DL UPN>"
 
 #Grab Group ID
 $groupid = (Get-MgGroup -Filter "DisplayName eq '$devicegroup'").Id
